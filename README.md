@@ -17,29 +17,37 @@ of entities.
 The Class Recorder is used to run all the events such as crashing, overtaking, braking, changeLane occurs during simulation. After the running, the process of simulation is stored in the separate pandas dataframe. The various events 
 occurring in the class Recorder are mentioned below.
 
-A. Emergency Braking:
+#### A. Emergency Braking:
 It is the situation of braking when it happens during the simulation, it will be recorded.
-B. Crash:
+
+#### B. Crash:
 Crashing is recorded when any vehicles crash during the run in the simulation.
-C. Enter: 
+
+#### C. Enter: 
 Enter is the event when vehicle enters the lane, it will be recorded.
-D. Leave:
+
+#### D. Leave:
 Leave is the event which happened when a vehicle leaves the lane, this will be recorded during the simulation run.
-E. End:
+
+#### E. End:
 End is recorded when the simulation has come to end.
 
 The Simulation is the replication of the real-world events in virtual technology. This project is self-organizing vehicles created by using simulation process. It runs for various times to estimate the optimal simulation result. In this research, Throughput will be estimated along with traffic flow (volume), traffic density, average speed and average total travelling time. An environment is created using simPy.environment. The classes and functions are combined all together in a single 
 environment using env.process. The simulation runs using env.run, all the events runs from the declared start and stop time. No events will run after the stop time, it will be ended.
 
-A. Traffic flow or traffic volume:
+#### A. Traffic flow or traffic volume:
 Traffic flow is the flow of the vehicles in the motorway, which is calculated by taking difference between the vehicle that enters the lane and which leaves the lane in the highway.
-B. Throughput:
+
+#### B. Throughput:
 Throughput is the aggregation volume between one direction lanes and the time. In this scenario, throughput is calculated by the difference between the last vehicle which leaves the lane and the first vehicle that leaves the lane.
-C. Average speed:
+
+#### C. Average speed:
 Average Speed is the calculation of the ratio of total lane length and total travelling time of the vehicle. After that, average will be taken by using the number of cars selected.
-D. Traffic density:
+
+#### D. Traffic density:
 Traffic density is the ratio of throughput and the average total travelling time taken for the highway.
-E. Average Total Travelling time:
+
+#### E. Average Total Travelling time:
 Average total travelling time is the mean of the total time travelled by the vehicles all through the motorway. In this scenario, all the vehicles total time which passes 
 through the highway from the enter lane to the leave lane is being calculated. Then, the average time will be estimated according to the total number of vehicles selected while simulation.
 
